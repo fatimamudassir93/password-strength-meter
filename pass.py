@@ -28,6 +28,12 @@ def main():
     """, unsafe_allow_html=True)
     
     st.markdown("<h1 style='text-align: center; color: #FFD700;'>🔒 Password Strength Meter</h1>", unsafe_allow_html=True)
+    st.write("""A password strength meter helps users create strong and secure passwords. 
+A strong password should be at least 8 characters long, contain uppercase and lowercase letters, 
+numbers, and special characters. Avoid using common words or easily guessable patterns.
+
+Use this tool to check the strength of your password!
+""")
     password = st.text_input("Enter your password:", type="password")
     
     if password:
